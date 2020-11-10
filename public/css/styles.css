@@ -1,0 +1,144 @@
+/* @font-face{
+  font-family: 'Bahnschrift Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Bahnschrift Regular'), url('/fonts/BAHNSCHRIFT.TTF') format('TTF');
+
+}
+@font-face{
+  font-family: 'Candara Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Candara Regular'), url('Candara.ttf') format('ttf');
+
+} */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+
+a:link{
+  text-decoration: none;
+}
+body{
+  
+  /* background:#b4c6e6; */
+  background:url("/img/covid-map01.png") no-repeat center;
+  background-size: cover;
+  
+}
+
+h1, h2{
+  font-family: 'Ubuntu Condensed', sans-serif;
+  font-size: 48px;
+  color:#16355a;
+  letter-spacing: .5rem;
+  text-align: center;
+  margin: 20px auto 60px auto;
+}
+
+h2{
+  font-size: 36px;
+}
+
+p{
+  font-family: 'Josefin Sans', sans-serif;
+  color:#0d0d0d;
+}
+
+.conteudo{
+  padding: 40px;
+  margin-top: 60px;
+  /* background:linear-gradient(90deg, #89f7fe 0%,#66a6ff 100% ); */
+  /* background:linear-gradient(90deg, #667db6 0%,#0082c8 33%,#0082c8 66%,#667db6 100% ); */
+  background:linear-gradient(90deg, #e52d27 0%,#b31217 100% );
+  width: 100%;
+}
+
+.nav-pages{
+  display: flex;
+  justify-content: space-between;
+}
+.bt{
+  color: #16355a;
+  margin-top: 80px;
+  font-size: 40px;
+  transition: ease-out 0.6s;
+
+}
+
+.bt:hover{
+  color: #ffffff;
+  transition: ease-in 0.6s;
+}
+
+
+.home{
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-end;
+}
+
+/* Conteúdo*/
+ul li img{
+  display: block;
+  width: 100px;
+}
+
+.prev-itens{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+}
+.prev-itens li img:hover{
+  opacity: 0.5;
+}
+.infos{
+  text-align: center;
+  font-size: 18px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+@media screen and (max-device-width: 480px) {
+  .prev-itens{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .prev-itens li{
+    margin-bottom: 20px;
+  }
+
+  .infos{
+    font-size: 14px;
+  }
+}
+/* Fim  */
+
+footer{
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
+}
+
+footer p{
+  color: #ffffff;
+  transition: ease-out 0.6s;
+}
+
+
+footer i{
+  font-size: 30px;
+  color: #ffffff;
+  transition: ease-out 0.6s;
+}
+
+footer i:hover, footer p:hover{
+ color:#c81d1d;
+ transition: ease-in 0.6s;
+}

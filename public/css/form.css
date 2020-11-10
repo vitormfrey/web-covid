@@ -1,0 +1,16 @@
+.txa{
+  background-color:rgb(24, 22, 22) !important;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #ffffff !important;
+}
+
+.form-check, .titulo{
+  text-transform: uppercase;
+  font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+.titulo{
+  font-size: 22px;
+  letter-spacing: .1rem;
+  line-height: 20px;
+}
