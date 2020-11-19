@@ -3,6 +3,11 @@
   font-family: 'Josefin Sans', sans-serif;
   color: #ffffff !important;
 }
+.form-div{
+  text-align: right;
+}
+
+
 
 .form-check, .titulo{
   text-transform: uppercase;

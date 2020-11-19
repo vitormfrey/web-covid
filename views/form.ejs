@@ -1,24 +1,28 @@
 <%- include("_header") -%>
 
 <section>
-  <form action="POST">
-    <div class="form-group green-border-focus">
-      <label for="" class="titulo">De que forma o Covid-19 impactou sua vida?</label>
-      <textarea class="form-control txa" id="exampleFormControlTextarea1" rows="3"></textarea>
+  <form action="/form" method="post">
+    <div class="form-group green-border-focus ">
+      <label for="Comment" class="titulo">De que forma o Covid-19 impactou sua vida?</label>
+      <textarea class="form-control txa" id="exampleFormControlTextarea1" rows="3" name="Comment" required></textarea>
     </div>
-   
-    <div class="form-check">
-      <input class="form-check-input" type="radio" name="exampleRadios" id="" value="true">
-      <label class="form-check-label" for="exampleRadios1">
-        Positiva
-      </label>
+    
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="Affected" id="rad1" value="true">
+        <label class="form-check-label" for="exampleRadios1">
+          Positiva
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="Affected" id="rad2" value="false">
+        <label class="form-check-label" for="exampleRadios2">
+          Negativa
+        </label>
+        <div class="form-div">
+        <input  type = "submit"  value ="Enviar"  class = "btn btn-default btn-success"/>
+      </div>
     </div>
-    <div class="form-check">
-      <input class="form-check-input" type="radio" name="exampleRadios" id="" value="false">
-      <label class="form-check-label" for="exampleRadios2">
-        Negativa
-      </label>
-    </div>
+
   </form>
 </section>
 

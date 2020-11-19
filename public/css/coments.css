@@ -5,20 +5,44 @@
   border-radius: 20px;
   position: relative;
   margin-bottom: 20px;
+  
+}
+
+.comentario:hover{
+  box-shadow:
+  5px 5px #FF5757,
+  2px 2px #FF5757,
+  3px 3px #FF5757;
+  -webkit-transform: translateX(-10px);
+  transform: translateX(-10px);
+
+
 }
 
 .comentario span{
   position: absolute;
   height: 40px;
   width: 40px;
-  background-color: rgb(135, 18, 18);
+
   border-radius: 50%;
   top: 30px;
   left: 50px;
 }
 
 .comentario p{
-  text-align: center;
+  text-align: left;
   color: #f5f5f5;
   margin-top: 30px;
+  padding-top: 20px;
+  padding-left: 60px;
+  word-wrap: break-word
 }
+
+.true{
+  background-color: #3CA661;
+}
+
+.false{
+  background-color: #FF5757;
+}
+
