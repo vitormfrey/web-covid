@@ -3,27 +3,50 @@
 <section>
   <form action="/form" method="post">
     <div class="form-group green-border-focus ">
-      <label for="Comment" class="titulo">De que forma o Covid-19 impactou sua vida?</label>
-      <textarea class="form-control txa" id="exampleFormControlTextarea1" rows="3" name="Comment" required></textarea>
-    </div>
-    
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="Affected" id="rad1" value="true">
-        <label class="form-check-label" for="exampleRadios1">
-          Positiva
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="Affected" id="rad2" value="false">
-        <label class="form-check-label" for="exampleRadios2">
-          Negativa
-        </label>
-        <div class="form-div">
-        <input  type = "submit"  value ="Enviar"  class = "btn btn-default btn-success"/>
-      </div>
-    </div>
+      <label for="Comment" class="titulo">Descreva um depoimento sobre a sua experiência com a pandemia, se ela te 
+        impactou de maneira positiva ou negativa</label>
 
+        <p class="mt-4">De que forma impactou?</p>
+        <div class="form-check radioStyles">
+          <input class="form-check-input" type="radio" name="Affected" id="rad1" value="positivo">
+          <label class="form-check-label" for="exampleRadios1">
+            Positiva
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="Affected" id="rad2" value="pegativo">
+          <label class="form-check-label" for="exampleRadios2">
+            Negativa
+          </label>         
+
+        <div>
+          <p class="mt-3">Deixe um depoimento...</p>
+         <textarea class="form-control txa" id="exampleFormControlTextarea1" rows="3" name="Comment" required></textarea>
+        </div>
+
+        <div hidden>
+          <textarea id="inputDate" name="Data_dia"></textarea>
+        </div>
+
+        
+
+        <div class="form-div mt-5" style="text-align: center;">
+          <input  type = "submit"  value ="Enviar"  class = "btn btn-default btn-success" style="width:200px;"/>
+        </div>
   </form>
 </section>
+
+
+<div class="nav-pages">
+  <a href="/grafico" class="bt">
+    <i class="fas fa-chevron-circle-left"></i>
+  </a>
+
+
+  <a href="/coments" class="bt">
+    <i class="fas fa-chevron-circle-right"></i>
+  </a>
+</div>
+
 
 <%- include("_footer") -%>

@@ -31,27 +31,29 @@
   </li>
  
 </ul>
+<p class="call">Clique no botão abixo para mais informações</p>
 <div class="nav-pages">
   <a href="/prevencao" class="bt">
     <i class="fas fa-chevron-circle-left"></i>
   </a>
+  
+  <a  class="bt" id="button" data-toggle="collapse" onclick="btRotate()" href="#collapseExample">
+    
+    <i class="fas fa-chevron-circle-down"></i>
+  </a>
+
+ 
+
   <a href="/grafico " class="bt">
     <i class="fas fa-chevron-circle-right"></i>
   </a>
 </div>
 
-
-<div class="collapsDiv">
-
-  <a type="button" class="collapsible mb-5 bt" onclick="btRotate()" id="bt"><i class="fas fa-chevron-circle-down bt"></i></a>
-  <div class="content">
-    <div class="dicas-conteudo">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/LwUjglzIUhc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    
-    </div>
-  </div>
   
-
-</div>
+  <div class="collapse" id="collapseExample" data-parent=".nav-pages">
+    <div class="conteudosSintomas">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/LwUjglzIUhc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    </div>
 
 <%- include("_footer") -%> 

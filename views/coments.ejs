@@ -1,20 +1,24 @@
 <%-include("_header")-%>
 <h1>Depoimentos</h1>
-<%for (const comments of model) {%>
-<div class="comentario">
-  <span id="type" class="<%= comments.Affected%>"></span>
-  <p> <%= comments.Comment %></p>
-</div >
-<%}%>
-
-
 <div class="nav-pages">
-  <a href="/grafico" class="bt">
+  <a href="/form" class="bt">
     <i class="fas fa-chevron-circle-left"></i>
   </a>
-  <a href="/form" class="bt">
-    <i class="fas fa-chevron-circle-right"></i>
-  </a>
+  <div class="coments col-md-12">
+    <%for (const comments of model) {%>
+      <div class="comentario">
+
+        <p id="valorComment">Comentario <%=comments.Affected%></p>
+        <span id="type" class="<%= comments.Affected%>"></span>
+        <p> <%= comments.Comment %></p>
+        <div class="valorData">
+          <div>
+            <p><%= comments.Data_dia%></p>
+          </div>
+        </div>
+      </div >
+      <%}%>
+  </div>
 </div>
 
 

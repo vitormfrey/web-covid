@@ -1,11 +1,20 @@
+
+.coments{
+  overflow-y: scroll;  
+  height: 450px;
+}
+
 .comentario {
+  display: flex;
+  
+  justify-content:center;
+  flex-direction: column;
   overflow: hidden;
   background-color: #3a3a3a;
   padding: 40px;
   border-radius: 20px;
   position: relative;
   margin-bottom: 20px;
-  
 }
 
 .comentario:hover{
@@ -38,11 +47,21 @@
   word-wrap: break-word
 }
 
-.true{
+.positivo{
   background-color: #3CA661;
 }
 
-.false{
+.negativo{
   background-color: #FF5757;
 }
+#valorComment{
+  font-size: 26px;
+  font-weight: bold;
+  margin-top: -25px;
+  margin-bottom: -30px;
+}
 
+.valorData p{
+  float: right;
+  color: rgba(199, 198, 198, 0.794);
+}

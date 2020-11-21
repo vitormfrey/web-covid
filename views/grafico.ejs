@@ -8,84 +8,12 @@
     <canvas id="myChart" style="position: relative; height:40vh; width:80vw"></canvas>
   </div>
 </div>
-<script>
-  
-  var ctx = document.getElementById('myChart').getContext('2d');
-	var chart = new Chart(ctx, {
-			type: 'line',
-			data: {
-        backgroundColor:'rgb(252, 238, 44)',
-				labels: ['03/11', '04/11', '05/11', '06/11', '07/11', '08/11'],
-				datasets: [{
-					label: 'Previsão',
-					backgroundColor: 'rgb(252, 238, 44)',
-          borderColor: 'rgb(252, 238, 44)',
-					data: [
-          5644713,
-          5734212,
-          5825129,
-          6024130,
-          6119644,
-          6216673,
-					],
-					fill: false,
-				}, {
-					label: 'Dado Real',
-					fill: false,
-					backgroundColor: 'rgb(21, 77, 146)',
-          borderColor: 'rgb(21, 77, 146)',
-					data: [
-          5566049,
-          5590021,
-          5590021,
-          5613181,
-          5653561,
-          5664115,
-					],
-				}]
-			},
 
-    // Configuration options go here
-    options: {
-				responsive: true,
-				title: {
-					display: true,
-					text: 'Previão de casos Covid Brasil - Usando Rede Neural Artificial (RNA)'
-				},
-				tooltips: {
-					mode: 'index',
-					intersect: false,
-				},
-				hover: {
-					mode: 'nearest',
-					intersect: true
-				},
-				scales: {
-					xAxes: [{
-						display: true,
-						scaleLabel: {
-							display: true,
-							labelString: 'Dias'
-						}
-					}],
-					yAxes: [{
-						display: true,
-						scaleLabel: {
-							display: true,
-							labelString: 'Casos'
-						}
-					}]
-				}
-			}
-		
-});
-
-</script>
 <div class="nav-pages">
   <a href="/sintomas" class="bt">
     <i class="fas fa-chevron-circle-left"></i>
   </a>
-  <a href="/coments" class="bt">
+  <a href="/form" class="bt">
     <i class="fas fa-chevron-circle-right"></i>
   </a>
 </div>

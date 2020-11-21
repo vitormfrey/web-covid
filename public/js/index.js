@@ -20,21 +20,22 @@
   // }, 5000)
 
   function btRotate(){
-    document.getElementById("bt").classList.toggle('giro')
+    document.getElementById("button").classList.toggle('giro')
     
   }
-  //Função do Collapse
+
+  var data = new Date();
+
+  var dia = data.getDate();
+  var mes = data.getMonth();
+  var ano = data.getFullYear()
+  var hora = data.getHours();          
+  var min = data.getMinutes();     
   
-  var coll = document.getElementsByClassName("collapsible");
-  var i;
+  // Formata a data e a hora (note o mês + 1)
+  var str_data = dia + '/' + (mes+1) + '/' + ano + ' ' + hora + ':' + min;
+
+  var inputDate = document.getElementById('inputDate').innerHTML = str_data
   
-  for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
-  })}
+
+  console.log(str_data)

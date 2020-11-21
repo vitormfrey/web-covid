@@ -38,7 +38,7 @@ app.get('/sintomas', (req, res)=>{
 })
 
 app.get('/coments', (req, res)=>{
-  const sql = "SELECT * FROM Comments ORDER BY Comment"
+  const sql = "SELECT * FROM Comments ORDER BY Comments_ID DESC"
 
   db.all(sql, [], (err, rows)=>{
 
@@ -56,8 +56,8 @@ app.get('/form', (req, res) =>{
 })
 
 app.post('/form', (req, res) =>{
-  const sql = "INSERT INTO Comments (Comment, Affected) VALUES (?, ?)"
-  const comment = [req.body.Comment, req.body.Affected];
+  const sql = "INSERT INTO Comments (Comment, Affected, Data_dia) VALUES (?, ?, ?)"
+  const comment = [req.body.Comment, req.body.Affected, req.body.Data_dia];
   db.run(sql, comment, err =>{
     if(err){
       console.error(err.message);
